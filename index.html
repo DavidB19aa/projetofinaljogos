@@ -1,0 +1,84 @@
+<!-- ESTUDANTE: DAVID BARBOSA DA SILVA
+     MATRÍCULA: 202304324468 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto e Ideias para Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo do Projeto" class="logo">
+    </header>
+
+    <main class="main-content">
+        <h1 class="texto-promocional">Seu sonho, nosso investimento</h1>
+    </main>
+	
+	<section class="beneficios-section">
+        <div class="beneficio">
+            <h3>Conexão com Investidores</h3>
+            <ul>
+                <li>Encontre investidores alinhados com sua visão</li>
+                <li>Receba apoio financeiro e estratégico</li>
+                <li>Facilite o contato direto e seguro</li>
+                <li>Melhore a visibilidade do seu projeto</li>
+            </ul>
+        </div>
+        <div class="beneficio">
+            <h3>Plataforma Intuitiva</h3>
+            <ul>
+                <li>Fácil envio de projetos</li>
+                <li>Ambiente seguro e transparente</li>
+                <li>Navegação simples e organizada</li>
+                <li>Ferramentas úteis de gerenciamento</li>
+            </ul>
+        </div>
+        <div class="beneficio">
+            <h3>Desenvolvimento Acelerado</h3>
+            <ul>
+                <li>Possibilidade de parcerias estratégicas</li>
+                <li>Apoio para impulsionar o desenvolvimento</li>
+                <li>Acessibilidade para criadores e investidores</li>
+                <li>Experiência personalizada e otimizada</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Apresente seu projeto</h2>
+        <form class="projeto-form" action="submit.php" method="POST">
+            <label for="nome_usuario">Nome:</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Seu nome" required>
+
+            <label for="nome-projeto">Nome do Projeto:</label>
+            <input type="text" id="nome_projeto" name="nome_projeto" placeholder="Nome do projeto" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+
+            <label for="descricao">Descrição do Projeto:</label>
+            <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva seu projeto aqui..." required></textarea>
+
+            <button type="submit" class="enviar-btn">ENVIAR</button>
+        </form>
+    </section>
+    
+    <button onclick="window.location.href='projetos.php'" class="projetos-btn">Ver Projetos</button>
+
+    <div id="mensagemModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p id="mensagemTexto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

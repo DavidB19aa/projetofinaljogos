@@ -1,0 +1,181 @@
+/*
+ ESTUDANTE: DAVID BARBOSA DA SILVA
+ MATRÍCULA: 202304324468 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(Warrior_Blue.png) center/cover no-repeat, rgba(24, 24, 24, 0.8);
+    background-blend-mode: overlay;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #5360FD;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.texto-promocional {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.2;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-section h2 {
+    color: #5360FD;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.projeto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projeto-form label {
+    color: #333;
+    font-weight: bold;
+}
+
+.projeto-form input,
+.projeto-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.enviar-btn,
+.projetos-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #5360FD;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar-btn:hover,
+.projetos-btn:hover {
+    background-color: #3b4db1;
+}
+
+.projetos-btn {
+    margin-top: 20px;
+    width: 20%;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+}
+
+.popup.visible {
+    display: block;
+}
+
+.popup h2,
+.popup button {
+    color: #5360FD;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #5360FD;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.beneficios-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.beneficio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.beneficio h3 {
+    color: #5360FD;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.beneficio ul {
+    list-style-type: none;
+    color: #333;
+}
+
+.beneficio ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}

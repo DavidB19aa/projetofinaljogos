@@ -1,0 +1,74 @@
+/*
+ ESTUDANTE: DAVID BARBOSA DA SILVA
+ MATRÍCULA: 202304324468 
+
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(Warrior_Blue.png) center/cover no-repeat, rgba(24, 24, 24, 0.8);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.texto-promocional {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.projeto-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projeto-detalhe {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.voltar-btn {
+    width: 10%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #5360FD;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+    background-color: #3b4db1;
+}
